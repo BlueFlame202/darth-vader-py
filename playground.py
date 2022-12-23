@@ -25,8 +25,8 @@ sentences = ["VADER is smart, handsome, and funny.",  # positive sentence exampl
 from senticnet.senticnet import SenticNet
 
 def vaderPlayground():
-    sn = SenticNet()
-    print(sn.polarity_value('love'))
+    # sn = SenticNet()
+    # print(sn.polarity_value('love'))
 
     analyzer = SentimentIntensityAnalyzer()
     for sentence in sentences:
@@ -49,5 +49,12 @@ def darthPlayground():
         print("{:-<65} {}".format(sentence, str(vs)))
     return
 
+print("-------------------------------------------")
+print("VADER Performance on Sentences:")
+print("-------------------------------------------")
 vaderPlayground()
+print("-------------------------------------------")
+print("DARTH-VADER Performance on Sentences:")
+print("-------------------------------------------")
 darthPlayground()
+print("-------------------------------------------")
