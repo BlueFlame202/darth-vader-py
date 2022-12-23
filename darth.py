@@ -113,7 +113,7 @@ class Darth(object):
                     cand, max = self.closest_word(item[0].lower(), item[1])
                     if max > self._COPY_THRESHHOLD:
                         self.vader.lexicon[item[0].lower()] = self.vader.lexicon[cand]
-                        #print(item[0].lower() + ' = ' + cand + '?' + ' Confidence: ' + str(max))
+                        print(item[0].lower() + ' = ' + cand + '?' + ' Confidence: ' + str(max)) # for testing purposes, print when a word is replaced.
 
     # Uses nltk to learn text
     # future: also use urbandictionary and other things to also handle slang (use a combination)

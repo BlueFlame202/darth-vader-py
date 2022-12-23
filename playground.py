@@ -21,7 +21,7 @@ sentences = ["VADER is smart, handsome, and funny.",  # positive sentence exampl
              "Make sure you :) or :D today!",  # emoticons handled
              "Catch utf-8 emoji such as such as 💘 and 💋 and 😁",  # emojis handled
              "Not bad at all",  # Capitalized negation
-             "Watching the Rose Wilt" # Word not in the lexicon
+             "Watch the rose wilt." # Word not in the lexicon
              ]
 
 # ISSUES WITH USING VADER FOR SENTIMENT ANALYSIS
