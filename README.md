@@ -65,8 +65,8 @@ sentences = ["VADER is smart, handsome, and funny.",  # positive sentence exampl
 from senticnet.senticnet import SenticNet
 
 def vaderPlayground():
-    sn = SenticNet()
-    print(sn.polarity_value('love'))
+    # sn = SenticNet()
+    # print(sn.polarity_value('love'))
 
     analyzer = SentimentIntensityAnalyzer()
     for sentence in sentences:
@@ -89,8 +89,15 @@ def darthPlayground():
         print("{:-<65} {}".format(sentence, str(vs)))
     return
 
+print("-------------------------------------------")
+print("VADER Performance on Sentences:")
+print("-------------------------------------------")
 vaderPlayground()
+print("-------------------------------------------")
+print("DARTH-VADER Performance on Sentences:")
+print("-------------------------------------------")
 darthPlayground()
+print("-------------------------------------------")
 ```
 
 which resulted in the following output:
@@ -137,6 +144,8 @@ Not bad at all--------------------------------------------------- {'neg': 0.0, '
 Watch the rose wilt.--------------------------------------------- {'neg': 0.474, 'neu': 0.526, 'pos': 0.0, 'compound': -0.4019}
 -------------------------------------------
 ```
+
+Observe that most of the scores given by VADER on the VADER test examples are similar to those given by DARTH-VADER. However, DARTH-VADER also performs better on the last sentence, which is an example containing a word not in the lexicon ('wilt'). 
 
 ## Contact
 
