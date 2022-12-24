@@ -1,6 +1,6 @@
-from vaderSentimentu import SentimentIntensityAnalyzer
+from darthVader.vaderSentimentu import SentimentIntensityAnalyzer
 
-import darth as d
+import darthVader.darth as d
 
 # --- examples -------
 sentences = ["VADER is smart, handsome, and funny.",  # positive sentence example
