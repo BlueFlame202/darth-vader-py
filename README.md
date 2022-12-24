@@ -38,9 +38,9 @@ darth.py has been successfully implemented. Scores on certain texts are more acc
 
 The following code, contained in ```playground.py```, was run:
 ```
-from vaderSentimentu import SentimentIntensityAnalyzer
+from darthVader.vaderSentimentu import SentimentIntensityAnalyzer
 
-import darth as d
+import darthVader.darth as d
 
 # --- examples -------
 sentences = ["VADER is smart, handsome, and funny.",  # positive sentence example
