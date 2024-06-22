@@ -8,6 +8,7 @@ An extension of VADER Sentiment Analysis. Valence Aware Dictionary and sEntiment
   * [Limitations](#limitations)
   * [Recent Updates](#recent-updates)
   * [Python Demo and Code Examples](#python-demo-and-code-examples)
+  * [Acknowledgements](#acknowledgements)
   * [Contact](#contact)
 
 ## Introduction
@@ -146,6 +147,10 @@ Watch the rose wilt.--------------------------------------------- {'neg': 0.474,
 ```
 
 Observe that most of the scores given by VADER on the VADER test examples are similar to those given by DARTH-VADER. However, DARTH-VADER also performs better on the last sentence, which is an example containing a word not in the lexicon ('wilt'). 
+
+## Acknowledgements
+
+Thank you to Professor Fedyk at UC Berkeley and Mohsen Chowdhury for mentoring me on the project for which I developed this tool.
 
 ## Contact
 
